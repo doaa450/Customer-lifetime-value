@@ -18,8 +18,8 @@ There are many ways to calculate CLTV, but the most recommended formula by data 
 The main objective of this project is to develop an Xgboost model to predict customer lifetime value (CLTV) and use this prediction to determine which cluster the customer belongs to.
 
 For this project, we will analyse historical transactional data and perform feature engineering to predict the customer lifetime value (CLTV) over the next 90 days.
-Table of Contents
 
+### Our project Steps: 
     Knowing the Dataset.
     Data Preprocessing and Analysis.
     Building Xgboost and performing shap values.
