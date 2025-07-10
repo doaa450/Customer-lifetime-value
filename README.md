@@ -8,3 +8,7 @@ Step-by-step machine learning project covering data preprocessing, feature engin
 
 ## render this result
 ![alt text](https://github.com/doaa450/Customer-lifetime-value/blob/main/8.PNG)
+
+App Link:![alt text](https://76f384c1c068.ngrok-free.app/)
+Medium Article: ![alt text](https://medium.com/@DoaaA/end-to-end-machine-learning-project-customer-lifetime-value-prediction-and-segmentation-80fea7730cb1)
+
