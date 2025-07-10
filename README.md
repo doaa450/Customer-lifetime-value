@@ -19,7 +19,7 @@ The main objective of this project is to develop an Xgboost model to predict cus
 
 For this project, we will analyse historical transactional data and perform feature engineering to predict the customer lifetime value (CLTV) over the next 90 days.
 
-### Our project Steps: 
+### Our Project Steps: 
     Knowing the Dataset.
     Data Preprocessing and Analysis.
     Building Xgboost and performing shap values.
@@ -27,6 +27,7 @@ For this project, we will analyse historical transactional data and perform feat
     Deployment using Flask and Ngrok.
     References
 
+## Final Application
 
 
 ![alt text](https://github.com/doaa450/Customer-lifetime-value/blob/main/88.PNG)
