@@ -37,7 +37,7 @@ For this project, we will analyse historical transactional data and perform feat
 ![alt text](https://github.com/doaa450/Customer-lifetime-value/blob/main/8.PNG)
 
 
-[App Link](https://76f384c1c068.ngrok-free.app/)
+[App Link](https://f71dd6122a60.ngrok-free.app/)
 
 
 
