@@ -87,10 +87,6 @@ Segments were analyzed to identify:
 #### **4.5.2** Develop **SHAP** values 
      To know how each attribute used in the model affects the model outcome
 
-     ![alt text](https://miro.medium.com/v2/resize:fit:720/format:webp/1*ySCFZCEsY9Z0xIXwuMD37Q.png)
-
-> As we can see from the above chart, Monetary_sum is the most influential variable, contributing an average of +$238.89 to each prediction
-
  #### **4.5.3** Develop **PCA** and **K-Means** 
       To cluster each customer based on their CLTV value
       
@@ -114,14 +110,14 @@ Segments were analyzed to identify:
     This segment has the highest average CLTV and the highest average cancellation rate.
     They repeated the purchase of the same products
     This segment has a low recency.
-    This segment includes the promising, new customers, potential Loyalists and Champions segments.
+    This segment includes promising new customers, potential Loyalists, and champions.
 
 **Recommendations**
 
     For the lowest average CLTV customers, this segment presents an opportunity for reengagement. It is recommended that we employ email marketing strategies that incorporate discounts, promotions, and personalised recommendations for new products.
-    For the medium average CLTV, applying upselling and cross-selling tactics can increase our revenue.
-    For the highest average CLTV, implement a loyalty program that includes loyalty points, discounts, product bundles, and regularly ask for feedback. We can not ignore that retaining loyal customers is cheaper than acquiring new ones.
-    By analysing the overlap between segment feature and our clusters prediction, the marketing team can effectively move customers from one cluster to another by tailoring their marketing strategy.
+    For the average CLTV customers, applying upselling and cross-selling tactics can increase our revenue.
+    For the highest average CLTV customers, implement a loyalty program that includes loyalty points, discounts, product bundles, and regularly ask for feedback. We can not ignore that retaining loyal customers is cheaper than acquiring new ones.
+    By analysing the overlap between segment features and our cluster predictions, the marketing team can effectively move customers from one cluster to another by tailoring their marketing strategy.
 
 
 
@@ -170,17 +166,13 @@ It highlights how data science can directly support **customer-centric decision-
 
 ---
 
-
-
-    References
-
 ## Final Application
 
 
 ![alt text](https://github.com/doaa450/Customer-lifetime-value/blob/main/88.PNG)
 
 
-## render this result
+## Render this result
 ![alt text](https://github.com/doaa450/Customer-lifetime-value/blob/main/8.PNG)
 
 
