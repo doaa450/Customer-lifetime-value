@@ -46,10 +46,6 @@ The dataset represents customer-level transactional including:
 
 ### 4.2 Exploratory Data Analysis (EDA)
 
-* 
-* 
-* 
-
 ### 4.3 CLTV Calculation
 
 CLTV was calculated using a structured approach based on:
@@ -91,8 +87,43 @@ Segments were analyzed to identify:
 #### **4.5.2** Develop **SHAP** values 
      To know how each attribute used in the model affects the model outcome
 
+     ![alt text](https://miro.medium.com/v2/resize:fit:720/format:webp/1*ySCFZCEsY9Z0xIXwuMD37Q.png)
+
+> As we can see from the above chart, Monetary_sum is the most influential variable, contributing an average of +$238.89 to each prediction
+
  #### **4.5.3** Develop **PCA** and **K-Means** 
       To cluster each customer based on their CLTV value
+      
+ **Main features of each cluster:**
+
+**Cluster 0:**
+
+    This segment has a medium average CLTV.
+    They purchase many unique products.
+    This segment has the highest quantity.
+    This segment includes the Can’t Lose, Need Attention, and Loyal Customers.
+
+**Cluster 1:**
+
+    This segment has the lowest average CLTV.
+    This segment has a high recency.
+    This segment includes the hibernating, at-risk, and about-to-sleep Customers.
+
+**Cluster 2:**
+
+    This segment has the highest average CLTV and the highest average cancellation rate.
+    They repeated the purchase of the same products
+    This segment has a low recency.
+    This segment includes the promising, new customers, potential Loyalists and Champions segments.
+
+**Recommendations**
+
+    For the lowest average CLTV customers, this segment presents an opportunity for reengagement. It is recommended that we employ email marketing strategies that incorporate discounts, promotions, and personalised recommendations for new products.
+    For the medium average CLTV, applying upselling and cross-selling tactics can increase our revenue.
+    For the highest average CLTV, implement a loyalty program that includes loyalty points, discounts, product bundles, and regularly ask for feedback. We can not ignore that retaining loyal customers is cheaper than acquiring new ones.
+    By analysing the overlap between segment feature and our clusters prediction, the marketing team can effectively move customers from one cluster to another by tailoring their marketing strategy.
+
+
 
 ---
 
@@ -140,33 +171,7 @@ It highlights how data science can directly support **customer-centric decision-
 ---
 
 
-# Customer-lifetime-value
-Step-by-step machine learning project covering data preprocessing, feature engineering, isolation forest, XGBoost, K-means, SHAP, and deployment using Flask and Ngrok in Colab.
 
-    All Customers Are Not Equal. Mark Jeffery
-
-As almost 20 percent of customers generate 80 percent of the revenue.
-
-## What is Customer Lifetime Value?
-
-    In marketing, customer lifetime value is a prognostication of the net profit contributed to the whole future relationship with a customer. wiki
-
-Tailor effective Value-based marketing strategies can help you retain your loyal customers for as long as possible.
-
-There are many ways to calculate CLTV, but the most recommended formula by data scientists like Barış Karaman is:
-
-### Lifetime Value = Total Gross Revenue — Total Cost
-
-The main objective of this project is to develop an Xgboost model to predict customer lifetime value (CLTV) and use this prediction to determine which cluster the customer belongs to.
-
-For this project, we will analyse historical transactional data and perform feature engineering to predict the customer lifetime value (CLTV) over the next 90 days.
-
-### Our Project Steps: 
-    Knowing the Dataset.
-    Data Preprocessing and Analysis.
-    Building Xgboost and performing shap values.
-    Building PCA and K-Means.
-    Deployment using Flask and Ngrok.
     References
 
 ## Final Application
@@ -184,6 +189,17 @@ For this project, we will analyse historical transactional data and perform feat
 
 
 [Medium Article](https://medium.com/@DoaaA/end-to-end-machine-learning-project-customer-lifetime-value-prediction-and-segmentation-80fea7730cb1).
+
+**References**
+
+    https://medium.com/data-science/data-driven-growth-with-python-part-3-customer-lifetime-value-prediction-6017802f2e0f
+    https://youtu.be/s-32u6XdY7c?si=mhOti9SFF-VSNZWJ
+    https://youtu.be/8vOMNRqiaDw?si=550TCLShtPzYJbFq
+    https://github.com/FarzadNekouee/Retail_Customer_Segmentation_Recommendation_System
+    https://www.putler.com/rfm-analysis/#How_to_Calculate_the_RFM_Score_on_a_Scale_of_1-5
+    https://github.com/joaolcorreia/RFM-analysis?tab=readme-ov-file
+    https://www.kaggle.com/code/marcinrutecki/outlier-detection-methods
+    https://medium.com/data-science/customer-segmentation-with-python-31dca5d5bdad
 
 
 
