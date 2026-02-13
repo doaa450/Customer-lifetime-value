@@ -8,12 +8,13 @@ Customer Lifetime Value (CLTV) is a core pillar of **Customer Value Management (
 
 ## 2. Business Problem
 
-Customer bases are heterogeneous: not all customers contribute equally to revenue or profitability.
+Customer bases are heterogeneous: not all customers contribute equally to revenue or profitability, and tailoring effective Value-based marketing strategies leads to retaining your loyal customers for as long as possible.
+
 
 **Key business questions addressed:**
 
-* Which customers generate the highest long-term value?
-* How can we segment customers based on behavioral and monetary patterns?
+* Which customers generate the highest value?
+* How can we segment customers based on behavioural and monetary patterns?
 * Can we predict future customer value to support targeted retention strategies?
 * How can CLTV insights be translated into actionable CVM decisions?
 
@@ -21,16 +22,18 @@ Customer bases are heterogeneous: not all customers contribute equally to revenu
 
 ## 3. Dataset Description
 
-The dataset represents customer-level transactional and behavioral data, including:
+This is a transactional data set which contains all the transactions occurring between 01/12/2010 and 09/12/2011 for a UK-based and registered non-store online retail. The company mainly sells unique all-occasion gifts. Many customers of the company are wholesalers
 
-* Customer ID
-* Transaction dates
-* Revenue / monetary value
-* Frequency of interactions or purchases
-* Recency metrics
+The dataset represents customer-level transactional including:
 
-> The dataset structure enables both **historical CLTV calculation** and **predictive modeling**.
-
+* InvoiceNo
+* StockCode
+* Description
+* Quantity
+* InvoiceDate
+* UnitPrice
+* CustomerID
+* Country
 ---
 
 ## 4. Methodology
@@ -39,19 +42,19 @@ The dataset represents customer-level transactional and behavioral data, includi
 
 * Data cleaning and validation
 * Handling missing values and duplicates
-* Feature engineering for recency, frequency, and monetary value
+* Feature engineering
 
 ### 4.2 Exploratory Data Analysis (EDA)
 
-* Revenue distribution analysis
-* Customer activity patterns
-* Identification of skewness and high-value outliers
+* 
+* 
+* 
 
 ### 4.3 CLTV Calculation
 
 CLTV was calculated using a structured approach based on:
 
-> **CLTV = Average Monetary Value × Purchase Frequency × Expected Customer Lifetime**
+> **CLTV = Total Gross Revenue — Total Cost**
 
 This provides a baseline measure of historical customer value.
 
@@ -65,9 +68,18 @@ Customers were segmented using **RFM analysis**:
 
 Segments were analyzed to identify:
 
-* High-value loyal customers
-* At-risk but valuable customers
-* Low-value / low-engagement customers
+ 	              **count** **perc**
+**Segment** 		
+Hibernating 	      441 	28.053435
+Loyal Customers 	  326 	20.737913
+Champions 	          236 	15.012723
+Potential Loyalists   177 	11.259542
+At Risk 	          162 	10.305344
+About to Sleep 	       97 	6.170483
+Need Attention 	       84 	5.343511
+Promising 	           21 	1.335878
+Can't Loose 	       21 	1.335878
+New Customers 	       7 	0.445293
 
 ### 4.5 Predictive Modeling
 
@@ -76,7 +88,11 @@ A supervised learning model was developed to predict **future CLTV**, using:
 * Behavioral features
 * Historical revenue patterns
 
-The model enables proactive CVM actions rather than reactive analysis.
+> The model enables proactive CVM actions rather than reactive analysis.
+
+Develop **SHAP** values to know how each attribute used in the model affects the model outcome
+
+Then develop **PCA** and **K-Means** to cluster each customer based on their CLTV value
 
 ---
 
@@ -92,7 +108,7 @@ The model enables proactive CVM actions rather than reactive analysis.
 
 This project supports multiple CVM initiatives:
 
-* 🎯 Targeted retention campaigns for high-CLTV, high-churn-risk customers
+* 🎯 Targeted retention campaigns for high-CLTV
 * 💰 Personalized offers for high-value segments
 * 📉 Reduced churn through early identification of declining engagement
 * 📈 Revenue optimization via value-based customer prioritization
@@ -101,9 +117,9 @@ This project supports multiple CVM initiatives:
 
 ## 7. Tools & Technologies
 
-* **Python** (Pandas, NumPy, Scikit-learn)
-* **Data Visualization** (Matplotlib / Seaborn or Power BI)
-* **Jupyter Notebook** for analysis and modeling
+* **Python** (Pandas, NumPy, Scikit-learn,Shap)
+* **Data Visualization** (Matplotlib / Seaborn)
+* **flask and Ngrok** for deploying ML model.
 
 ---
 
@@ -117,21 +133,11 @@ This project supports multiple CVM initiatives:
 
 ## 9. Conclusion
 
-This CLTV project demonstrates an **end-to-end CVM analytics workflow**, from raw data to business-ready insights.
+This CLTV project demonstrates an **end-to-end CLTV prediction**, from raw data to business-ready insights.
 
 It highlights how data science can directly support **customer-centric decision-making**, revenue growth, and long-term value optimisation.
 
 ---
-
-## 10. Author
-
-**Doaa Ahmed**
-Applied Data Scientist – CVM & Marketing Analytics Focus
-
-
-
-
-
 
 
 # Customer-lifetime-value
