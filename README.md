@@ -173,11 +173,11 @@ It highlights how data science can directly support **customer-centric decision-
 ## Final Application
 
 
-![alt text](https://github.com/doaa450/Customer-lifetime-value/blob/main/88.PNG)
+![alt text](https://github.com/doaa450/Customer-lifetime-value/blob/main/App.PNG)
 
 
 ## Render this result
-![alt text](https://github.com/doaa450/Customer-lifetime-value/blob/main/8.PNG)
+![alt text](https://github.com/doaa450/Customer-lifetime-value/blob/main/Prediction.PNG)
 
 
 [App Link](https://f71dd6122a60.ngrok-free.app/)
