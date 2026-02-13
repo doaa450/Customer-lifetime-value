@@ -68,31 +68,31 @@ Customers were segmented using **RFM analysis**:
 
 Segments were analyzed to identify:
 
- 	              **count** **perc**
-**Segment** 		
-Hibernating 	      441 	28.053435
-Loyal Customers 	  326 	20.737913
-Champions 	          236 	15.012723
-Potential Loyalists   177 	11.259542
-At Risk 	          162 	10.305344
-About to Sleep 	       97 	6.170483
-Need Attention 	       84 	5.343511
-Promising 	           21 	1.335878
-Can't Loose 	       21 	1.335878
-New Customers 	       7 	0.445293
+* Hibernating 	     
+* Loyal Customers 	  
+* Champions 	       
+* Potential Loyalists   
+* At Risk 	         
+* About to Sleep 	   
+* Need Attention 	 
+* Promising 	     
+* Can't Loose 	    
+* New Customers 	
 
 ### 4.5 Predictive Modeling
 
-A supervised learning model was developed to predict **future CLTV**, using:
+#### **4.5.1**  A supervised learning model was developed to predict **future CLTV**, using:
 
 * Behavioral features
 * Historical revenue patterns
 
 > The model enables proactive CVM actions rather than reactive analysis.
 
-Develop **SHAP** values to know how each attribute used in the model affects the model outcome
+#### **4.5.2** Develop **SHAP** values 
+     To know how each attribute used in the model affects the model outcome
 
-Then develop **PCA** and **K-Means** to cluster each customer based on their CLTV value
+ #### **4.5.3** Develop **PCA** and **K-Means** 
+      To cluster each customer based on their CLTV value
 
 ---
 
