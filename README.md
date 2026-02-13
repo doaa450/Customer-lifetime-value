@@ -4,8 +4,6 @@
 
 Customer Lifetime Value (CLTV) is a core pillar of **Customer Value Management (CVM)**. This project demonstrates how data-driven CLTV analysis can be used to **identify high-value customer segments**, **predict future value**, and **support retention & monetization decisions**.
 
-The project is designed from a **telecom / subscription-business perspective**, aligned with real-world CVM use cases in companies such as Orange or Vodafone.
-
 ---
 
 ## 2. Business Problem
