@@ -56,7 +56,11 @@ The dataset represents customer-level transactional including:
 
 ---
       
- **Main features of each cluster:**
+
+
+## 🔗 Customer Clustering
+
+Using **PCA + K-Means**, customers were grouped into:
 
 **Cluster 0:** (Mid-Value Customers)
 
