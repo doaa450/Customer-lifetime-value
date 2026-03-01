@@ -200,4 +200,32 @@ It highlights how data science can directly support **customer-centric decision-
     https://medium.com/data-science/customer-segmentation-with-python-31dca5d5bdad
 
 
+    # 📊 Customer Lifetime Value (CLTV) Analytics Project
+
+## 📌 Business Problem
+
+In e-commerce, a small percentage of customers drives the majority of revenue, while many others churn without clear signals.
+
+Companies struggle to:
+- Identify high-value customers early
+- Allocate marketing budgets efficiently
+- Design targeted retention strategies
+
+This project addresses these challenges by building an end-to-end CLTV analytics and prediction system.
+
+---
+
+## 🎯 Objective
+
+- Predict Customer Lifetime Value (CLTV)
+- Segment customers based on behavior
+- Generate actionable insights for Customer Value Management (CVM)
+
+---
+
+## 📊 What is CLTV?
+
+Customer Lifetime Value (CLTV) estimates the total future revenue a customer is expected to generate, enabling better decision-making in marketing, retention, and revenue optimization.
+
+
 
