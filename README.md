@@ -1,6 +1,6 @@
 # 📊 Customer Lifetime Value (CLTV) Analytics Project
 
-## 1. Project Overview
+##  Project Overview
 
 Customer Lifetime Value (CLTV) is a core pillar of **Customer Value Management (CVM)**. This project demonstrates how data-driven CLTV analysis can be used to **identify high-value customer segments**, **predict future value**, and **support retention & monetization decisions**.
 
@@ -12,7 +12,7 @@ Objective: Build an end-to-end analytics workflow to calculate, analyze, and pre
 
 ---
 
-## 2. Business Problem
+##  Business Problem
 
 Customer bases are heterogeneous: not all customers contribute equally to revenue or profitability, and tailoring effective Value-based marketing strategies leads to retaining your loyal customers for as long as possible.
 
@@ -26,7 +26,7 @@ Customer bases are heterogeneous: not all customers contribute equally to revenu
 
 ---
 
-## 3. Dataset Description
+##  Dataset Description
 
 This is a transactional data set which contains all the transactions occurring between 01/12/2010 and 09/12/2011 for a UK-based and registered non-store online retail. The company mainly sells unique all-occasion gifts. Many customers of the company are wholesalers
 
@@ -93,7 +93,7 @@ Using **PCA + K-Means**, customers were grouped into:
 
 ---
 
-## 5. Key Insights
+##  Key Insights
 
 * A small percentage of customers contributes a disproportionately large share of total CLTV.
 * RFM segmentation clearly distinguishes **high-potential** vs **churn-risk** customers.
@@ -101,7 +101,7 @@ Using **PCA + K-Means**, customers were grouped into:
 
 ---
 
-## 6. Business Impact & CVM Use Cases
+##  Business Impact & CVM Use Cases
 
 This project supports multiple CVM initiatives:
 
@@ -112,7 +112,7 @@ This project supports multiple CVM initiatives:
 
 ---
 
-## 7. Tools & Technologies
+##  Tools & Technologies
 
 * **Python** (Pandas, NumPy, Scikit-learn,Shap)
 * **Data Visualization** (Matplotlib / Seaborn)
@@ -120,7 +120,7 @@ This project supports multiple CVM initiatives:
 
 ---
 
-## 8. Limitations & Future Improvements
+##  Limitations & Future Improvements
 
 * Incorporate churn probability explicitly into CLTV calculation
 * Extend modelling with survival analysis or probabilistic CLTV models
@@ -128,7 +128,7 @@ This project supports multiple CVM initiatives:
 
 ---
 
-## 9. Conclusion
+##  Conclusion
 
 This CLTV project demonstrates an **end-to-end CLTV prediction**, from raw data to business-ready insights.
 
