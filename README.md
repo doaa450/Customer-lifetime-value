@@ -199,8 +199,7 @@ It highlights how data science can directly support **customer-centric decision-
     https://www.kaggle.com/code/marcinrutecki/outlier-detection-methods
     https://medium.com/data-science/customer-segmentation-with-python-31dca5d5bdad
 
-
-    # 📊 Customer Lifetime Value (CLTV) Analytics Project
+# 📊 Customer Lifetime Value (CLTV) Analytics Project
 
 ## 📌 Business Problem
 
@@ -220,12 +219,132 @@ This project addresses these challenges by building an end-to-end CLTV analytics
 - Predict Customer Lifetime Value (CLTV)
 - Segment customers based on behavior
 - Generate actionable insights for Customer Value Management (CVM)
+- Enable data-driven retention and monetization strategies
 
 ---
 
 ## 📊 What is CLTV?
 
-Customer Lifetime Value (CLTV) estimates the total future revenue a customer is expected to generate, enabling better decision-making in marketing, retention, and revenue optimization.
+Customer Lifetime Value (CLTV) estimates the total future revenue a customer is expected to generate, enabling better prioritization of high-value customers and optimization of marketing efforts.
+
+---
+
+## 📂 Dataset Description
+
+This dataset contains transactional data from a UK-based online retail company (2010–2011).
+
+**Key Features:**
+- InvoiceNo
+- StockCode
+- Description
+- Quantity
+- InvoiceDate
+- UnitPrice
+- CustomerID
+- Country
+
+---
+
+## 🔄 Project Pipeline
+
+1. Data Preparation  
+2. Exploratory Data Analysis (EDA)  
+3. Feature Engineering  
+4. RFM Segmentation  
+5. CLTV Prediction (XGBoost)  
+6. Model Explainability (SHAP)  
+7. Customer Clustering (PCA + K-Means)  
+8. Business Recommendations  
+
+---
+
+## 🧪 Feature Engineering
+
+- Recency, Frequency, Monetary (RFM)
+- Average Order Value
+- Customer Tenure
+- Purchase Diversity (unique products)
+- Cancellation Rate
+
+---
+
+## 📊 Customer Segmentation (RFM)
+
+Customers were segmented into:
+
+- Champions  
+- Loyal Customers  
+- Potential Loyalists  
+- At Risk  
+- Hibernating  
+- Need Attention  
+- Promising  
+- New Customers  
+
+---
+
+## 🤖 Predictive Modeling
+
+- Model: **XGBoost Regressor**
+- Goal: Predict future customer value (CLTV)
+
+### 🔍 Model Explainability
+- SHAP values used to interpret feature importance
+
+---
+
+## 🔗 Customer Clustering
+
+Using **PCA + K-Means**, customers were grouped into:
+
+### Cluster 0 (Mid-Value Customers)
+- متوسط CLTV  
+- High product diversity  
+- فرصة للـ upsell  
+
+### Cluster 1 (Low-Value / At-Risk)
+- Lowest CLTV  
+- High recency (inactive)  
+- Requires re-engagement  
+
+### Cluster 2 (High-Value Customers)
+- Highest CLTV  
+- Frequent repeat purchases  
+- ⚠️ High cancellation rate → needs monitoring  
+
+---
+
+## 📈 Key Insights
+
+- A small percentage of customers contributes most of the revenue  
+- RFM effectively identifies churn-risk vs high-value users  
+- Predictive CLTV enables proactive retention strategies  
+
+---
+
+## 🎯 Business Recommendations
+
+- Launch personalized retention campaigns for at-risk customers  
+- Use cross-selling & upselling for mid-value segments  
+- Introduce loyalty programs for high-value customers  
+- Optimize marketing spend based on CLTV segments  
+
+---
+
+## 📈 Model Performance
+
+- Model: XGBoost Regressor  
+- Evaluation: (Add RMSE / R² if available)  
+- Successfully captures customer value patterns  
+
+---
+
+## ⚙️ How to Run
+
+```bash
+git clone https://github.com/doaa450/Customer-lifetime-value.git
+cd Customer-lifetime-value
+pip install -r requirements.txt
 
 
 
