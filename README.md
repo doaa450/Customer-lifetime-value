@@ -42,76 +42,36 @@ The dataset represents customer-level transactional including:
 * Country
 ---
 
-## 4. Methodology
 
-### 4.1 Data Preparation
+## 🔄 Project Pipeline
 
-* Data cleaning and validation
-* Handling missing values and duplicates
-* Feature engineering
+1. Data Preparation  
+2. Exploratory Data Analysis (EDA)  
+3. Feature Engineering  
+4. RFM Segmentation  
+5. CLTV Prediction (XGBoost)  
+6. Model Explainability (SHAP)  
+7. Customer Clustering (PCA + K-Means)  
+8. Business Recommendations  
 
-### 4.2 Exploratory Data Analysis (EDA)
-
-### 4.3 CLTV Calculation
-
-CLTV was calculated using a structured approach based on:
-
-> **CLTV = Total Gross Revenue — Total Cost**
-
-This provides a baseline measure of historical customer value.
-
-### 4.4 Customer Segmentation (RFM)
-
-Customers were segmented using **RFM analysis**:
-
-* **Recency**: How recently a customer was active
-* **Frequency**: How often the customer engages
-* **Monetary**: How much revenue the customer generates
-
-Segments were analyzed to identify:
-
-* Hibernating 	     
-* Loyal Customers 	  
-* Champions 	       
-* Potential Loyalists   
-* At Risk 	         
-* About to Sleep 	   
-* Need Attention 	 
-* Promising 	     
-* Can't Loose 	    
-* New Customers 	
-
-### 4.5 Predictive Modeling
-
-#### **4.5.1**  A supervised learning model (XGboost) was developed to predict **future CLTV**, using:
-
-* Behavioral features
-* Historical revenue patterns
-
-> The model enables proactive CVM actions rather than reactive analysis.
-
-#### **4.5.2** Develop **SHAP** values 
-     To know how each attribute used in the model affects the model outcome
-
- #### **4.5.3** Develop **PCA** and **K-Means** 
-      To cluster each customer based on their CLTV value
+---
       
  **Main features of each cluster:**
 
-**Cluster 0:**
+**Cluster 0:** (Mid-Value Customers)
 
     This segment has a medium average CLTV.
     They purchase many unique products.
     This segment has the highest quantity.
     This segment includes the Can’t Lose, Need Attention, and Loyal Customers.
 
-**Cluster 1:**
+**Cluster 1:** (Low-Value / At-Risk)
 
     This segment has the lowest average CLTV.
     This segment has a high recency.
     This segment includes the hibernating, at-risk, and about-to-sleep Customers.
 
-**Cluster 2:**
+**Cluster 2:** (High-Value Customers)
 
     This segment has the highest average CLTV and the highest average cancellation rate.
     They repeated the purchase of the same products
@@ -198,153 +158,4 @@ It highlights how data science can directly support **customer-centric decision-
     https://github.com/joaolcorreia/RFM-analysis?tab=readme-ov-file
     https://www.kaggle.com/code/marcinrutecki/outlier-detection-methods
     https://medium.com/data-science/customer-segmentation-with-python-31dca5d5bdad
-
-# 📊 Customer Lifetime Value (CLTV) Analytics Project
-
-## 📌 Business Problem
-
-In e-commerce, a small percentage of customers drives the majority of revenue, while many others churn without clear signals.
-
-Companies struggle to:
-- Identify high-value customers early
-- Allocate marketing budgets efficiently
-- Design targeted retention strategies
-
-This project addresses these challenges by building an end-to-end CLTV analytics and prediction system.
-
----
-
-## 🎯 Objective
-
-- Predict Customer Lifetime Value (CLTV)
-- Segment customers based on behavior
-- Generate actionable insights for Customer Value Management (CVM)
-- Enable data-driven retention and monetization strategies
-
----
-
-## 📊 What is CLTV?
-
-Customer Lifetime Value (CLTV) estimates the total future revenue a customer is expected to generate, enabling better prioritization of high-value customers and optimization of marketing efforts.
-
----
-
-## 📂 Dataset Description
-
-This dataset contains transactional data from a UK-based online retail company (2010–2011).
-
-**Key Features:**
-- InvoiceNo
-- StockCode
-- Description
-- Quantity
-- InvoiceDate
-- UnitPrice
-- CustomerID
-- Country
-
----
-
-## 🔄 Project Pipeline
-
-1. Data Preparation  
-2. Exploratory Data Analysis (EDA)  
-3. Feature Engineering  
-4. RFM Segmentation  
-5. CLTV Prediction (XGBoost)  
-6. Model Explainability (SHAP)  
-7. Customer Clustering (PCA + K-Means)  
-8. Business Recommendations  
-
----
-
-## 🧪 Feature Engineering
-
-- Recency, Frequency, Monetary (RFM)
-- Average Order Value
-- Customer Tenure
-- Purchase Diversity (unique products)
-- Cancellation Rate
-
----
-
-## 📊 Customer Segmentation (RFM)
-
-Customers were segmented into:
-
-- Champions  
-- Loyal Customers  
-- Potential Loyalists  
-- At Risk  
-- Hibernating  
-- Need Attention  
-- Promising  
-- New Customers  
-
----
-
-## 🤖 Predictive Modeling
-
-- Model: **XGBoost Regressor**
-- Goal: Predict future customer value (CLTV)
-
-### 🔍 Model Explainability
-- SHAP values used to interpret feature importance
-
----
-
-## 🔗 Customer Clustering
-
-Using **PCA + K-Means**, customers were grouped into:
-
-### Cluster 0 (Mid-Value Customers)
-- متوسط CLTV  
-- High product diversity  
-- فرصة للـ upsell  
-
-### Cluster 1 (Low-Value / At-Risk)
-- Lowest CLTV  
-- High recency (inactive)  
-- Requires re-engagement  
-
-### Cluster 2 (High-Value Customers)
-- Highest CLTV  
-- Frequent repeat purchases  
-- ⚠️ High cancellation rate → needs monitoring  
-
----
-
-## 📈 Key Insights
-
-- A small percentage of customers contributes most of the revenue  
-- RFM effectively identifies churn-risk vs high-value users  
-- Predictive CLTV enables proactive retention strategies  
-
----
-
-## 🎯 Business Recommendations
-
-- Launch personalized retention campaigns for at-risk customers  
-- Use cross-selling & upselling for mid-value segments  
-- Introduce loyalty programs for high-value customers  
-- Optimize marketing spend based on CLTV segments  
-
----
-
-## 📈 Model Performance
-
-- Model: XGBoost Regressor  
-- Evaluation: (Add RMSE / R² if available)  
-- Successfully captures customer value patterns  
-
----
-
-## ⚙️ How to Run
-
-```bash
-git clone https://github.com/doaa450/Customer-lifetime-value.git
-cd Customer-lifetime-value
-pip install -r requirements.txt
-
-
 
