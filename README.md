@@ -148,6 +148,8 @@ It highlights how data science can directly support **customer-centric decision-
 
 [App Link](https://f71dd6122a60.ngrok-free.app/)
 
+⚠️ Note: The deployed app uses ngrok and may not always be active.
+
 
 
 [Medium Article](https://medium.com/@DoaaA/end-to-end-machine-learning-project-customer-lifetime-value-prediction-and-segmentation-80fea7730cb1).
