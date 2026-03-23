@@ -164,4 +164,5 @@ It highlights how data science can directly support **customer-centric decision-
     https://github.com/joaolcorreia/RFM-analysis?tab=readme-ov-file
     https://www.kaggle.com/code/marcinrutecki/outlier-detection-methods
     https://medium.com/data-science/customer-segmentation-with-python-31dca5d5bdad
+    https://www.sagacitysolutions.co.uk/about/news-and-blog/customer-value-management-strategies-tips-best-practices/
 
